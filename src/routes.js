@@ -8,6 +8,7 @@ import Notifications from "views/Notifications.js";
 import Upgrade from "views/Upgrade.js";
 import Kudi from "views/Kudi.js";
 import Tracker from "views/Tracker/Tracker.js"
+import About from "views/About/About.js"
 
 const dashboardRoutes = [
   {
@@ -26,10 +27,53 @@ const dashboardRoutes = [
     layout: "/admin",
   },
   {
+    path: "/tracker",
+    name: "Live Coin Prices",
+    icon: "nc-icon nc-chart-bar-32",
+    component: Tracker,
+    layout: "/admin",
+  },
+  {
+    path: "/about",
+    name: "About Us",
+    icon: "nc-icon nc-paper-2",
+    component: About,
+    layout: "/admin",
+  },
+  {
+    path: "/maps",
+    name: "Locations",
+    icon: "nc-icon nc-pin-3",
+    component: Maps,
+    layout: "/admin",
+  },
+   {
+    path: "/contact",
+    name: "Contact Us",
+    icon: "nc-icon nc-email-85",
+    component: Typography,
+    layout: "/admin",
+  },
+  {
+    path: "/icons",
+    name: "Icons (DEV)",
+    icon: "nc-icon nc-atom",
+    component: Icons,
+    layout: "/admin",
+  },
+  /*
+  {
     path: "/dashboard",
     name: "Dashboard",
     icon: "nc-icon nc-chart-pie-35",
     component: Dashboard,
+    layout: "/admin",
+  },
+  {
+    path: "/notifications",
+    name: "Notifications",
+    icon: "nc-icon nc-bell-55",
+    component: Notifications,
     layout: "/admin",
   },
   {
@@ -53,34 +97,7 @@ const dashboardRoutes = [
     component: Typography,
     layout: "/admin",
   },
-  {
-    path: "/icons",
-    name: "Icons",
-    icon: "nc-icon nc-atom",
-    component: Icons,
-    layout: "/admin",
-  },
-  {
-    path: "/maps",
-    name: "Maps",
-    icon: "nc-icon nc-pin-3",
-    component: Maps,
-    layout: "/admin",
-  },
-  {
-    path: "/notifications",
-    name: "Notifications",
-    icon: "nc-icon nc-bell-55",
-    component: Notifications,
-    layout: "/admin",
-  },
-  {
-    path: "/tracker",
-    name: "Tracker",
-    icon: "nc-icon nc-bell-55",
-    component: Tracker,
-    layout: "/admin",
-  },
+  */
 ];
 
 export default dashboardRoutes;
