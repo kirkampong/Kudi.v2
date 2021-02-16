@@ -1,8 +1,5 @@
-*[ackage-lock.json*]
-package-lock.json
 node_modules/
+package-lock.json
 .eslintcache
 .DS_Store
 *.DS_Store*
-
-

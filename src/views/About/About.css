@@ -1,0 +1,16 @@
+
+
+.team-area{
+	display: flex;
+    flex-direction: row;
+}
+
+.team-member {
+	justify-content: center;
+    height: 17em;
+    display: flex;
+    overflow: hidden;	
+}
+.socials {	
+	width:100%;
+}
