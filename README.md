@@ -45,3 +45,8 @@ accounts = await web3.eth.getAccounts()
 balance = await mDai.balanceOf(accounts[1])  
 balance.toString()  
 readableBalance = web3.utils.fromWei(balance) (toWei works too)  
+
+Node lifecyle:
+npm intall 
+npm run build
+npm start server
