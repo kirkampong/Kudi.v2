@@ -7,6 +7,7 @@ import Maps from "views/Maps.js";
 import Notifications from "views/Notifications.js";
 import Upgrade from "views/Upgrade.js";
 import Kudi from "views/Kudi.js";
+import Tracker from "views/Tracker/Tracker.js"
 
 const dashboardRoutes = [
   {
@@ -71,6 +72,13 @@ const dashboardRoutes = [
     name: "Notifications",
     icon: "nc-icon nc-bell-55",
     component: Notifications,
+    layout: "/admin",
+  },
+  {
+    path: "/tracker",
+    name: "Tracker",
+    icon: "nc-icon nc-bell-55",
+    component: Tracker,
     layout: "/admin",
   },
 ];
