@@ -3,7 +3,7 @@ import Web3 from 'web3'
 import DaiToken from '../abis/DaiToken.json'
 import LigdiToken from '../abis/LigdiToken.json'
 import TokenFarm from '../abis/TokenFarm.json'
-import Main from '../components/Main'
+import Main from '../components/Deposit'
 
 class App extends Component {
 

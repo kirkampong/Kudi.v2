@@ -5,25 +5,24 @@ import Typography from "views/Typography.js";
 import Icons from "views/Icons.js";
 import Maps from "views/Maps.js";
 import Notifications from "views/Notifications.js";
-import Upgrade from "views/Upgrade.js";
 import Kudi from "views/Kudi.js";
 import Tracker from "views/Tracker/Tracker.js"
 import About from "views/About/About.js"
+import Wallet from "views/Wallet.js"
 
 const dashboardRoutes = [
   {
-    upgrade: true,
-    path: "/upgrade",
-    name: "Upgrade to PRO",
-    icon: "nc-icon nc-alien-33",
-    component: Upgrade,
+    path: "/kudi",
+    name: "My Kudi",
+    icon: "nc-icon nc-bag",
+    component: Kudi,
     layout: "/admin",
   },
   {
-    path: "/Kudi",
-    name: "My Kudi",
+    path: "/wallet",
+    name: "Wallet",
     icon: "nc-icon nc-money-coins",
-    component: Kudi,
+    component: Wallet,
     layout: "/admin",
   },
   {

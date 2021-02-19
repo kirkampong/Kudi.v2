@@ -24,13 +24,13 @@ function Sidebar({ color, image, routes }) {
           >
             <div className="logo-img">
               <img
-                src={require("assets/img/eth-logo.png").default}
+                src={require("assets/img/dai-logo.png")}
                 alt="..."
               />
             </div>
           </a>
           <a className="simple-text" href="http://www.github.com/kirkampong">
-              KUDI
+             KUDI
           </a>
         </div>
         <Nav>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import dai from '../dai.png'
+import dai from 'assets/img/dai-logo.png'
 
 class Main extends Component {
 
@@ -16,7 +16,7 @@ class Main extends Component {
           </thead>
           <tbody className="text-white">
             <tr>
-              <td>{window.web3.utils.fromWei(this.props.stakingBalance, 'Ether')} $mDAI</td>
+              <td>{window.web3.utils.fromWei(this.props.stakingBalance, 'Ether')} DAI</td>
               <td>{window.web3.utils.fromWei(this.props.ligdiTokenBalance, 'Ether')} KUDI</td>
             </tr>
           </tbody>
@@ -52,11 +52,11 @@ class Main extends Component {
                     //onClick={(event) => {event.preventDefault()}}
                   >
                     <img src={dai} height='32' alt=""/>
-                    &nbsp;&nbsp;&nbsp; mDAI
+                    &nbsp;&nbsp;&nbsp; DAI
                   </button>
                 </div>
               </div>
-              <button type="submit" className="btn btn-success btn-block btn-lg">STAKE!</button>
+              <button type="submit" className="btn btn-success btn-block btn-lg">DEPOSIT</button>
             </form>
             <button
               type="submit"
@@ -65,7 +65,7 @@ class Main extends Component {
                 event.preventDefault()
                 this.props.unstakeTokens()
               }}>
-                UN-STAKE...
+                WITHDRAW...
               </button>
 
           </div>

@@ -72,7 +72,49 @@ function Typography() {
                   <Col md="4">
                     <Card>
                       <Card.Header>
-                        <p className="card-category description text-center">COO/Product Manager: Joel Ojo</p>
+                        <p className="card-category description text-center">COO/PM: Sedinam Worlanyo</p>
+                      </Card.Header>
+                      <Card.Body>
+                        <div className="team-member">
+                          <img class="img-responsive" src={require('./sedz.jpg')} />
+                        </div>
+                      </Card.Body>
+                    
+                    <Card.Footer>
+                      <div class="d-flex justify-content-between">
+                        <Button
+                          className="btn-social btn-outline btn-round sharrre"
+                          id="twitter"
+                          variant="twitter"
+                          href="https://twitter.com/opanyin_k"
+                        >
+                          <i className="fab fa-twitter"></i> 
+                        </Button>
+                        <Button
+                          className="btn-social btn-outline btn-round sharrre"
+                          id="instagram"
+                          variant="instagram"
+                          href="https://www.instagram.com/kirko__/"
+                        >
+                          <i class="fab fa-instagram"></i> 
+                        </Button>
+                        <Button
+                          className="btn-social btn-outline btn-round sharrre"
+                          id="linkedin"
+                          variant="linkedin"
+                          href="https://www.linkedin.com/in/kirkampong"
+                        >
+                          <i class="fab fa-linkedin-in"></i> 
+                        </Button>
+                      </div>
+                    </Card.Footer>
+                   </Card>
+                  </Col>
+
+                   <Col md="4">
+                    <Card>
+                      <Card.Header>
+                        <p className="card-category description text-center">CMO/CFO: Joel Ojo</p>
                       </Card.Header>
                       <Card.Body>
                         <div className="team-member">
