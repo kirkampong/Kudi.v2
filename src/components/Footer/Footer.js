@@ -9,7 +9,7 @@ class Footer extends Component {
           <nav>
             <p className="copyright text-center">
               © {new Date().getFullYear()}{" "}
-              <a href="http://www.guthub.com/kirkampong">A product of IdeationX Inc</a>. Made with
+              <a href="http://www.guthub.com/kirkampong">A product of Kudi Inc</a>.  Made with
               love for a better world.
             </p>
           </nav>

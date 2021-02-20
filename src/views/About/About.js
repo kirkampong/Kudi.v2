@@ -21,10 +21,66 @@ function Typography() {
           <Col md="12">
             <Card>
               <Card.Header>
+                <Card.Title as="h2">
+                  Kudi
+                  <br></br>
+                  <small>Send, Buy, Save & Earn Crypto</small>
+                </Card.Title>
+              </Card.Header>
+              <Card.Body>
+                <br></br>
+                <div className="content mr-auto ml-auto" style={{ width: "330px" }}>
+                  <img class="img-responsive mx-auto" src={require('./kudi-logo.png')} />
+                </div>
+                <h4 className="text-center">What is Kudi ?</h4>
+                <p className="text-muted text-center">
+                  Kudi is your one stop shop for your crypto needs. It offers a simple and easy user experience 
+                  for digital currency users of all bacgrounds. Save, Send, Invest & Earn all your favorite digital currencies,
+                  including Kudi-Africa's first global digital currency!
+                </p>
+                <hr></hr>
+
+                <h4>Save & Earn:</h4>
+                <p className="text-muted">
+                  Deposit your Kudi, Bitcoin, Ethereum, Binance Coin or Cardano in our Virtual <span className="font-weight-bold">Bank</span>, and withdraw all your digital currency at any time. 
+                  Everyday you save with us you earn interest in Kudi Coin (KDC) as a reward. We are working on rewarding our customers in Bitcoin
+                  and Ethereum.
+                </p>
+                <h4>Send:</h4>
+                <p className="text-muted">
+                  With access to your personal <span className="font-weight-bold">Wallet</span>, view your balance and Send Kudi, Bitcoin, Ethereum, Binance Coin, 
+                  or Cardano instantly using your recepient's digital wallet address.
+                </p>
+
+                <hr></hr>
+                <h4 className="text-primary">Coming Soon...</h4>
+
+                <p className="text-muted">
+                  <span className="font-weight-bold">Buy</span>:
+                  Purchase Kudi, Bitcoin, Ethereum, Binance Coin, or Cardano using Naira or Cedis.
+                </p>
+                <p className="text-muted">
+                  <span className="font-weight-bold">Kudi Finance</span>:
+                  Africa's first decentralized digital currency platform. Lend & Borrow digital currency, 
+                  and invest in Individuals and small & medium enterprises across Africa
+                </p>
+
+                <hr></hr>
+                <blockquote>
+                  <p className="text-secondary">
+                    "Kudi is your."
+                    <br></br>
+                    <small>- Abraham Lincoln</small>
+                  </p>
+                </blockquote>
+              </Card.Body>
+
+            </Card>
+            <Card>
+              <Card.Header>
                 <Card.Title as="h4">Our Team</Card.Title>
               </Card.Header>
               <Card.Body>
-
                 <Row>
                   <Col md="4">
                     <Card>
@@ -156,117 +212,11 @@ function Typography() {
 
 
                 </Row>
+                  
 
 
-                <div className="typography-line">
-                  <h1>
-                    <span>Header 1</span>
-                    The Life of Light Bootstrap Dashboard React
-                  </h1>
-                </div>
-                <div className="typography-line">
-                  <h2>
-                    <span>Header 2</span>
-                    The Life of Light Bootstrap Dashboard React
-                  </h2>
-                </div>
-                <div className="typography-line">
-                  <h3>
-                    <span>Header 3</span>
-                    The Life of Light Bootstrap Dashboard React
-                  </h3>
-                </div>
-                <div className="typography-line">
-                  <h4>
-                    <span>Header 4</span>
-                    The Life of Light Bootstrap Dashboard React
-                  </h4>
-                </div>
-                <div className="typography-line">
-                  <h5>
-                    <span>Header 5</span>
-                    The Life of Light Bootstrap Dashboard React
-                  </h5>
-                </div>
-                <div className="typography-line">
-                  <h6>
-                    <span>Header 6</span>
-                    The Life of Light Bootstrap Dashboard React
-                  </h6>
-                </div>
-                <div className="typography-line">
-                  <p>
-                    <span>Paragraph</span>I will be the leader of a company that
-                    ends up being worth billions of dollars, because I got the
-                    answers. I understand culture. I am the nucleus. I think
-                    that’s a responsibility that I have, to push possibilities,
-                    to show people, this is the level that things could be at.
-                  </p>
-                </div>
-                <div className="typography-line">
-                  <span>Quote</span>
-                  <blockquote>
-                    <p className="blockquote blockquote-primary">
-                      "I will be the leader of a company that ends up being
-                      worth billions of dollars, because I got the answers. I
-                      understand culture. I am the nucleus. I think that’s a
-                      responsibility that I have, to push possibilities, to show
-                      people, this is the level that things could be at."{" "}
-                      <br></br>
-                      <br></br>
-                      <small>- Noaa</small>
-                    </p>
-                  </blockquote>
-                </div>
-                <div className="typography-line">
-                  <span>Muted Text</span>
-                  <p className="text-muted">
-                    I will be the leader of a company that ends up being worth
-                    billions of dollars, because I got the answers...
-                  </p>
-                </div>
-                <div className="typography-line">
-                  <span>Primary Text</span>
-                  <p className="text-primary">
-                    I will be the leader of a company that ends up being worth
-                    billions of dollars, because I got the answers...
-                  </p>
-                </div>
-                <div className="typography-line">
-                  <span>Info Text</span>
-                  <p className="text-info">
-                    I will be the leader of a company that ends up being worth
-                    billions of dollars, because I got the answers...
-                  </p>
-                </div>
-                <div className="typography-line">
-                  <span>Success Text</span>
-                  <p className="text-success">
-                    I will be the leader of a company that ends up being worth
-                    billions of dollars, because I got the answers...
-                  </p>
-                </div>
-                <div className="typography-line">
-                  <span>Warning Text</span>
-                  <p className="text-warning">
-                    I will be the leader of a company that ends up being worth
-                    billions of dollars, because I got the answers...
-                  </p>
-                </div>
-                <div className="typography-line">
-                  <span>Danger Text</span>
-                  <p className="text-danger">
-                    I will be the leader of a company that ends up being worth
-                    billions of dollars, because I got the answers...
-                  </p>
-                </div>
-                <div className="typography-line">
-                  <h2>
-                    <span>Small Tag</span>
-                    Header with small subtitle <br></br>
-                    <small>Use "small" tag for the headers</small>
-                  </h2>
-                </div>
+                  
+                 
               </Card.Body>
             </Card>
           </Col>

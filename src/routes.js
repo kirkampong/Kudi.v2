@@ -2,18 +2,19 @@ import Dashboard from "views/Dashboard.js";
 import UserProfile from "views/UserProfile.js";
 import TableList from "views/TableList.js";
 import Typography from "views/Typography.js";
+import Contact from "views/Contact.js";
 import Icons from "views/Icons.js";
 import Maps from "views/Maps.js";
 import Notifications from "views/Notifications.js";
 import Kudi from "views/Kudi.js";
-import Tracker from "views/Tracker/Tracker.js"
-import About from "views/About/About.js"
-import Wallet from "views/Wallet.js"
+import Tracker from "views/Tracker/Tracker.js";
+import About from "views/About/About.js";
+import Wallet from "views/Wallet.js";
 
 const dashboardRoutes = [
   {
     path: "/kudi",
-    name: "My Kudi",
+    name: "Bank",
     icon: "nc-icon nc-bag",
     component: Kudi,
     layout: "/admin",
@@ -33,6 +34,13 @@ const dashboardRoutes = [
     layout: "/admin",
   },
   {
+    path: "/maps",
+    name: "Locations",
+    icon: "nc-icon nc-pin-3",
+    component: Maps,
+    layout: "/admin",
+  },
+  {
     path: "/about",
     name: "About Us",
     icon: "nc-icon nc-paper-2",
@@ -40,19 +48,13 @@ const dashboardRoutes = [
     layout: "/admin",
   },
   {
-    path: "/maps",
-    name: "Locations",
-    icon: "nc-icon nc-pin-3",
-    component: Maps,
-    layout: "/admin",
-  },
-   {
     path: "/contact",
     name: "Contact Us",
     icon: "nc-icon nc-email-85",
-    component: Typography,
+    component: Contact,
     layout: "/admin",
   },
+  /*
   {
     path: "/icons",
     name: "Icons (DEV)",
@@ -60,6 +62,14 @@ const dashboardRoutes = [
     component: Icons,
     layout: "/admin",
   },
+  {
+    path: "/typography",
+    name: "Typography (Dev)",
+    icon: "nc-icon nc-atom",
+    component: Typography,
+    layout: "/admin",
+  },
+  */
   /*
   {
     path: "/dashboard",
@@ -89,14 +99,8 @@ const dashboardRoutes = [
     component: TableList,
     layout: "/admin",
   },
-  {
-    path: "/typography",
-    name: "Typography",
-    icon: "nc-icon nc-paper-2",
-    component: Typography,
-    layout: "/admin",
-  },
-  */
+  */ 
+  
 ];
 
 export default dashboardRoutes;
