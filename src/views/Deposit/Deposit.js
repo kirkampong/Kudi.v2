@@ -1,15 +1,28 @@
-import React, { Component } from 'react'
-import {Card, Row, Col} from "react-bootstrap";
-import dai from 'assets/img/dai-logo.png'
+import React, { Component , useState} from 'react'
+import {Card, Row, Col, Dropdown} from "react-bootstrap";
+import kudiLogo from './kudi-logo.png'
+import daiLogo from './dai-logo.png'
+import ethLogo from './eth-logo.png'
+import btcLogo from './btc-logo.png'
+import bnbLogo from './bnb-logo.png'
+import adaLogo from './ada-logo.png'
 import './Deposit.css'
 
 class Main extends Component {
+  //const [toggle, setToggle] = useState([]);
+  constructor(props) {
+    super(props)
+    this.state = {
+      logo: daiLogo,
+    }
+  }
 
   render() {
+
     return (
       <div id="content" className="mt-3">
         <div class="card mb-3">
-          <img class="mx-auto mt-3" src={dai} height="92" width="90"  alt=""/>
+          <img class="mx-auto mt-3" src={kudiLogo} height="192" width="220"  alt=""/>
           <div class="card-body">
             <table className="table table-borderless text-muted text-center">
               <thead className="centerOverride">
@@ -53,13 +66,56 @@ class Main extends Component {
                   placeholder="0"
                   required />
                 <div className="input-group-append dropdown">
-                  <button
-                    className="input-group-text dropdown-toggle" type="button" data-toggle="dropdown" 
-                    //onClick={(event) => {event.preventDefault()}}
-                  >
-                    <img src={dai} height='32' alt=""/>
-                    &nbsp;&nbsp;&nbsp; DAI
-                  </button>
+                  <Dropdown>
+                    <Dropdown.Toggle
+                      aria-expanded={false}
+                      aria-haspopup={true}
+                      data-toggle="dropdown"
+                      id="depositDropdownMenu"
+                      variant="default"
+                      className="m-0"
+                    >
+                    <span className="no-icon">
+                      <img src={this.state.logo} height='32' alt=""/>&nbsp; Coin
+                    </span>
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu aria-labelledby="depositDropdownMenu">
+                      <Dropdown.Item
+                        href="#pablo"
+                        onClick={(e) => this.setState({logo: daiLogo})}
+                      >
+                        DAI (Test)
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        href="#pablo"
+                        onClick={(e) => this.setState({logo: btcLogo})}
+                      >
+                        Bitcoin (BTC)
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        href="#pablo"
+                        onClick={(e) => this.setState({logo: ethLogo})}
+                      >
+                        Ethereum (ETH)
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        href="#pablo"
+                        onClick={(e) => this.setState({logo: bnbLogo})}
+                      >
+                        BinanceCoin (BNB)
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        href="#pablo"
+                        onClick={(e) => this.setState({logo: adaLogo})}
+                      >
+                        Cardano (ADA)
+                      </Dropdown.Item>
+                      
+                    </Dropdown.Menu>
+                  </Dropdown>
+
+
+
                 </div>
               </div>
               <button type="submit" className="btn btn-primary btn-block btn-lg">DEPOSIT</button>

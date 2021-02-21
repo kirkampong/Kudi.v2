@@ -68,9 +68,9 @@ function Typography() {
                 <hr></hr>
                 <blockquote>
                   <p className="text-secondary">
-                    "Kudi is your."
+                    "I expect great things from Kudi in the future. The possibilities are endless!"
                     <br></br>
-                    <small>- Abraham Lincoln</small>
+                    <small>- Kevin Harlley</small>
                   </p>
                 </blockquote>
               </Card.Body>
@@ -128,11 +128,11 @@ function Typography() {
                   <Col md="4">
                     <Card>
                       <Card.Header>
-                        <p className="card-category description text-center">COO/PM: Sedinam Worlanyo</p>
+                        <p className="card-category description text-center">Snr Engineer/PM: Kevin Harlley</p>
                       </Card.Header>
                       <Card.Body>
                         <div className="team-member">
-                          <img class="img-responsive" src={require('./sedz.jpg')} />
+                          <img class="img-responsive" src={require('./kflex.jpg')} />
                         </div>
                       </Card.Body>
                     

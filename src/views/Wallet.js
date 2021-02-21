@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import daiLogo from 'assets/img/dai-logo.png';
+import kudiLogo from 'assets/img/kudi-logo.png';
 import Web3 from 'web3';
 import DaiTokenMock from '../abis/DaiToken.json'
 
@@ -51,7 +52,7 @@ class App extends Component {
 
     this.transfer = this.transfer.bind(this)
   }
-
+        
   render() {
     return (
       <div>
@@ -60,14 +61,13 @@ class App extends Component {
           <div className="row">
             <main role="main" className="col-lg-12 d-flex text-center">
               <div className="content mr-auto ml-auto" style={{ width: "500px" }}>
-                <a
-                  href="http://www.dappuniversity.com/bootcamp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={daiLogo} width="150" />
-                </a>
-                <h1>{this.state.balance} KUDI</h1>
+                <div class="card mb-3">
+                  <img class="mx-auto mt-3" src={kudiLogo} height="192" width="220"  alt=""/>
+                  <div class="card-body">
+                    <h1>{this.state.balance} KUDI</h1>
+                  </div>
+                </div>
+                
                 <form onSubmit={(event) => {
                   event.preventDefault()
                   const recipient = this.recipient.value

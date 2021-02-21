@@ -61,24 +61,6 @@ function Header() {
           <span className="navbar-toggler-bar burger-lines"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="nav mr-auto" navbar>
-
-
-            <Dropdown as={Nav.Item}>
-              <Dropdown.Toggle
-                as={Nav.Link}
-                data-toggle="dropdown"
-                id="dropdown-67443507"
-                variant="default"
-                className="m-0"
-              >
-                <i className="nc-icon nc-planet"></i>
-                <span className="notification">5</span>
-                <span className="d-lg-none ml-1">Notification</span>
-              </Dropdown.Toggle>
-            </Dropdown>
-          </Nav>
-
           <Nav className="ml-auto" navbar>
             <Dropdown as={Nav.Item}>
               <Dropdown.Toggle
