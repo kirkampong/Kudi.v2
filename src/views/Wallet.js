@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
-import daiLogo from 'assets/img/dai-logo.png';
-import kudiLogo from 'assets/img/kudi-logo.png';
+import {Dropdown} from "react-bootstrap";
 import Web3 from 'web3';
 import DaiTokenMock from '../abis/DaiToken.json'
+import daiLogo from 'assets/img/dai-logo.png';
+import kudiLogo from 'assets/img/kudi-logo.png';
+import ethLogo from './Deposit/eth-logo.png'
+import btcLogo from './Deposit/btc-logo.png'
+import bnbLogo from './Deposit/bnb-logo.png'
+import adaLogo from './Deposit/ada-logo.png'
+
 
 class App extends Component {
   async componentWillMount() {
@@ -47,7 +53,9 @@ class App extends Component {
       account: '',
       daiTokenMock: null,
       balance: 0,
-      transactions: []
+      transactions: [],
+      logo: daiLogo,
+      symbol: "DAI"
     }
 
     this.transfer = this.transfer.bind(this)
@@ -61,10 +69,66 @@ class App extends Component {
           <div className="row">
             <main role="main" className="col-lg-12 d-flex text-center">
               <div className="content mr-auto ml-auto" style={{ width: "500px" }}>
+                <Dropdown>
+                    <Dropdown.Toggle
+                      aria-expanded={false}
+                      aria-haspopup={true}
+                      data-toggle="dropdown"
+                      id="depositDropdownMenu"
+                      variant="default"
+                      className="m-0"
+                      style={{width:"-webkit-fill-available"}}
+                    >
+                    <span className="no-icon">
+                      <img src={this.state.logo} height='32' alt=""/>&nbsp; Coin
+                    </span>
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu aria-labelledby="depositDropdownMenu">
+                      <Dropdown.Item
+                        href="#pablo"
+                        onClick={(e) => this.setState({logo: daiLogo, symbol:"DAI"})}
+                      >
+                        DAI (Test)
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        href="#pablo"
+                        onClick={(e) => this.setState({logo: kudiLogo, symbol:"KUDI"})}
+                      >
+                        KUDI
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        href="#pablo"
+                        onClick={(e) => this.setState({logo: btcLogo, symbol:"BTC"})}
+                      >
+                        Bitcoin (BTC)
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        href="#pablo"
+                        onClick={(e) => this.setState({logo: ethLogo, symbol:"ETH"})}
+                      >
+                        Ethereum (ETH)
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        href="#pablo"
+                        onClick={(e) => this.setState({logo: bnbLogo, symbol:"BNB"})}
+                      >
+                        BinanceCoin (BNB)
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        href="#pablo"
+                        onClick={(e) => this.setState({logo: adaLogo, symbol:"ADA"})}
+                      >
+                        Cardano (ADA)
+                      </Dropdown.Item>
+                      
+                    </Dropdown.Menu>
+                  </Dropdown>
+
+                <br></br>
                 <div class="card mb-3">
                   <img class="mx-auto mt-3" src={kudiLogo} height="192" width="220"  alt=""/>
                   <div class="card-body">
-                    <h1>{this.state.balance} KUDI</h1>
+                    <h1>{this.state.balance} {this.state.symbol}</h1>
                   </div>
                 </div>
                 

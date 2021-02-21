@@ -72,7 +72,6 @@ function Header() {
                 variant="default"
                 className="m-0"
               >
-                <span className="no-icon">Select Coin</span>
               </Dropdown.Toggle>
               <Dropdown.Menu aria-labelledby="navbarDropdownMenuLink">
                 <Dropdown.Item

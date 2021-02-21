@@ -14,7 +14,7 @@ import Wallet from "views/Wallet.js";
 const dashboardRoutes = [
   {
     path: "/kudi",
-    name: "Bank",
+    name: "Stake & Earn",
     icon: "nc-icon nc-bag",
     component: Kudi,
     layout: "/admin",
@@ -54,7 +54,6 @@ const dashboardRoutes = [
     component: Contact,
     layout: "/admin",
   },
-  /*
   {
     path: "/icons",
     name: "Icons (DEV)",
@@ -62,6 +61,7 @@ const dashboardRoutes = [
     component: Icons,
     layout: "/admin",
   },
+  /*
   {
     path: "/typography",
     name: "Typography (Dev)",

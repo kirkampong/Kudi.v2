@@ -9,11 +9,11 @@ import adaLogo from './ada-logo.png'
 import './Deposit.css'
 
 class Main extends Component {
-  //const [toggle, setToggle] = useState([]);
   constructor(props) {
     super(props)
     this.state = {
       logo: daiLogo,
+      symbol: "DAI"
     }
   }
 
@@ -33,7 +33,7 @@ class Main extends Component {
               </thead>
               <tbody>
                 <tr>
-                  <td>{window.web3.utils.fromWei(this.props.stakingBalance, 'Ether')} DAI</td>
+                  <td>{window.web3.utils.fromWei(this.props.stakingBalance, 'Ether')} {this.state.symbol}</td>
                   <td>{window.web3.utils.fromWei(this.props.ligdiTokenBalance, 'Ether')} KUDI</td>
                 </tr>
               </tbody>
@@ -82,40 +82,37 @@ class Main extends Component {
                     <Dropdown.Menu aria-labelledby="depositDropdownMenu">
                       <Dropdown.Item
                         href="#pablo"
-                        onClick={(e) => this.setState({logo: daiLogo})}
+                        onClick={(e) => this.setState({logo: daiLogo, symbol:"DAI"})}
                       >
                         DAI (Test)
                       </Dropdown.Item>
                       <Dropdown.Item
                         href="#pablo"
-                        onClick={(e) => this.setState({logo: btcLogo})}
+                        onClick={(e) => this.setState({logo: btcLogo, symbol:"BTC"})}
                       >
                         Bitcoin (BTC)
                       </Dropdown.Item>
                       <Dropdown.Item
                         href="#pablo"
-                        onClick={(e) => this.setState({logo: ethLogo})}
+                        onClick={(e) => this.setState({logo: ethLogo, symbol:"ETH"})}
                       >
                         Ethereum (ETH)
                       </Dropdown.Item>
                       <Dropdown.Item
                         href="#pablo"
-                        onClick={(e) => this.setState({logo: bnbLogo})}
+                        onClick={(e) => this.setState({logo: bnbLogo, symbol:"BNB"})}
                       >
                         BinanceCoin (BNB)
                       </Dropdown.Item>
                       <Dropdown.Item
                         href="#pablo"
-                        onClick={(e) => this.setState({logo: adaLogo})}
+                        onClick={(e) => this.setState({logo: adaLogo, symbol:"ADA"})}
                       >
                         Cardano (ADA)
                       </Dropdown.Item>
                       
                     </Dropdown.Menu>
                   </Dropdown>
-
-
-
                 </div>
               </div>
               <button type="submit" className="btn btn-primary btn-block btn-lg">DEPOSIT</button>
