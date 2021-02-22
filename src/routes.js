@@ -10,9 +10,16 @@ import Kudi from "views/Kudi.js";
 import Tracker from "views/Tracker/Tracker.js";
 import About from "views/About/About.js";
 import Wallet from "views/Wallet.js";
+import Buy from "views/Buy.js";
 
 const dashboardRoutes = [
   {
+    path: "/kudi",
+    name: "Buy Crypto",
+    icon: "nc-icon nc-money-coins",
+    component: Buy,
+    layout: "/admin",
+  },{
     path: "/kudi",
     name: "Stake & Earn",
     icon: "nc-icon nc-bag",
@@ -21,8 +28,8 @@ const dashboardRoutes = [
   },
   {
     path: "/wallet",
-    name: "Wallet",
-    icon: "nc-icon nc-money-coins",
+    name: "Send",
+    icon: "nc-icon nc-send",
     component: Wallet,
     layout: "/admin",
   },

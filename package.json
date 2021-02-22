@@ -1,7 +1,7 @@
 {
   "name": "crypto-api-v1",
   "version": "0.1.0",
-  "description": "DeFi Token Staking App",
+  "description": "Kudi Crypto App",
   "author": "Kirk Ampong (kirkampong2@gmail.com)",
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.2",
