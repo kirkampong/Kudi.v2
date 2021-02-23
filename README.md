@@ -3,9 +3,12 @@ Befoer attempting to access or use this code please read the LICENSE for terms o
 
 **LIGDI**
 
-- A Self sustaining crypto currency called LIGDI 
+- A Self sustaining crypto currency called KUDI 
 - Backed by smart contracts and blockchain-secure
-- Users can deposit their own crypto (DaiCrypto & soon many others, including BTC) and earn interest in LIGDI
+- Users can deposit their own crypto (DaiCrypto & soon many others, including BTC) and earn interest in KUDI
+- Users can send view wallet balance KUDI or Ethereum-based cryptos.
+- Live coin price tracker page
+- Buy crpto on the app (coming soon)
 
 
 **Dependencies:**
@@ -14,13 +17,13 @@ Befoer attempting to access or use this code please read the LICENSE for terms o
 * MetaMask - Ethereum Wallet integration for google chrome browser. Login Required
 
 **Tokens:** (ERC20 tokens)
-* LigdiToken
-* DaiToken (Mock Token)
+* KudiToken
+* DaiToken (Mock Token for test purposes)
 
 **Smart Contracts:**
-* Ligdi Contract
+* Kudi Contract
 * Dai Contract
-* **LigdiFarm Contract**:
+* **KudiFarm Contract**: Users can stake their own ETH-based crypto and farm for KUDI earnings
 
 *transferFrom* is a delegated form of the *transfer* function which allows me to move tokens on behalf of an investor
 
@@ -33,8 +36,6 @@ Befoer attempting to access or use this code please read the LICENSE for terms o
 * Run *'truffle test'* : run tests
 * Run *'truffle exec scripts/issue-tokens.js'* : run script
 * npm run start : spin up node server
-
-
 
 Eg:
 Context: Our contracts in ... and migrations ... blah blah [expained]
