@@ -1,7 +1,7 @@
 **Copyright (c) 2020 IdeationX**  
 Befoer attempting to access or use this code please read the LICENSE for terms of use.
 
-**LIGDI**
+**KUDI**
 
 - A Self sustaining crypto currency called KUDI 
 - Backed by smart contracts and blockchain-secure
