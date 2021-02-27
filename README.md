@@ -4,9 +4,6 @@ UX Demo:
 
 [![UX Demo](http://img.youtube.com/vi/1JwokPV5R-U/0.jpg)](http://www.youtube.com/watch?v=1JwokPV5R-U "Kudi UX Walkthrough")
 
-Project Abandoned :/ 
-
-[![Abandoned!](http://img.youtube.com/vi/Oz0v4p5tAcI/0.jpg)](http://www.youtube.com/watch?v=Oz0v4p5tAcI "Kudi UX Walkthrough")
 
 
 
