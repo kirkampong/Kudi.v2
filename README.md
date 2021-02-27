@@ -34,7 +34,7 @@ UX Demo:
 *transferFrom* is a delegated form of the *transfer* function which allows me to move tokens on behalf of an investor
 
 
-**Turorials:**
+**Tutorials:**
 * Run *'truffle compile'* to compile contracts into ./src/abis
 * Run *'truffle migrate'* to deploy smart contracts to THE blockchain using migration scripts, add *--reset* to replace previous contracts
 * Run *'truffle console'* : JS blockchain environment THEN *tokenFarm = await LigdiFarm.deployed(); tokenFarm;* to view contract;  
