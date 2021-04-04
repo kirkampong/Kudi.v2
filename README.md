@@ -3,8 +3,7 @@
 UX Demo: 
 
 [![UX Demo](http://img.youtube.com/vi/1JwokPV5R-U/0.jpg)](http://www.youtube.com/watch?v=1JwokPV5R-U "Kudi UX Walkthrough")
-
-
+[![Wallet Demo](http://img.youtube.com/vi/10LQe75cZN8/0.jpg)](http://www.youtube.com/watch?v=10LQe75cZN8 "Kudi Wallet Send")
 
 
 **KUDI**
